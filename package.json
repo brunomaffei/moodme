@@ -1,5 +1,5 @@
 {
-  "name": "webar.rocks.face_demos",
+  "name": "mood.me.sport-make",
   "version": "1.0.0",
   "homepage": "./",
   "description": "Mood-me MaskFace ",
@@ -45,6 +45,7 @@
     "url": "git@github.com:xavierjs/WebAR.rocks.face"
   },
   "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.14.5",
     "@react-three/postprocessing": "^2.0.3",
     "@tweenjs/tween.js": "^18.6.4",
     "react": "^17.0.2",
