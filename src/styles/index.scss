@@ -1,0 +1,78 @@
+body {
+  background: url('../assets/images/backgroundwordcup.jpg') no-repeat center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+}
+
+#WebARRocksFaceCanvasAR, #WebARRocksFaceCanvasVideo{
+  padding: 0;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* mirror the canvas: */
+  transform: rotateY(180deg);
+}
+
+#WebARRocksFaceCanvasVideo {
+  z-index: 0;
+}
+
+#WebARRocksFaceCanvasAR {
+  z-index: 1;
+}
+
+.belgium, .brazil, .france, .portugal {
+  top: 50px;
+  align-items: center;
+  margin: auto;
+  height: 90px;
+  display: -moz-inline-grid;
+  position: relative;
+}
+
+.imgDiv {
+  display: block;
+  text-align: center;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.imgDiv div {
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+  .imgDiv {
+    width: 80%;
+  }
+  body {
+    background: url(../assets/images/backgroundwordcup.jpg) no-repeat -52px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+  }
+  #WebARRocksFaceCanvasAR, #WebARRocksFaceCanvasVideo {
+    top: -150px;
+    width: 100%;
+    height: 40%;
+  }
+}
+
+/* DESKTOP ONLY */
+
+@media only screen and (min-width: 767px) {
+  #WebARRocksFaceCanvasAR, #WebARRocksFaceCanvasVideo {
+    width: 600px;
+    height: 500px;
+  }
+  .imgDiv div {
+    float: left;
+    width: 25%;
+  }
+}
