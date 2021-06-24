@@ -1,6 +1,7 @@
 {
   "name": "webar.rocks.face_demos",
   "version": "1.0.0",
+  "homepage": "./",
   "description": "Mood-me MaskFace ",
   "main": "index.js",
   "author": "Bruno A Maffei",
