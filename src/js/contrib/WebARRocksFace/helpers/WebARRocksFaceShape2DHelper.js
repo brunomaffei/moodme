@@ -16,7 +16,6 @@
 import WEBARROCKSFACE from '../dist/WebARRocksFace.module.js';
 import WebARRocksLMStabilizer from './stabilizers/WebARRocksLMStabilizer2.js';
 
-
 const WebARRocksFaceShape2DHelper = (function(){
   const _defaultSpec = {
     NN: null,
@@ -113,7 +112,6 @@ const WebARRocksFaceShape2DHelper = (function(){
       return Promise.resolve(imageSpec.img);
     }
   }
-
 
   function create_glVideoTexture(){
     const glTexture = _gl.createTexture();

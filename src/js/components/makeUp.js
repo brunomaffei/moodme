@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
-
 // import neural network model:
 import NN from '../contrib/WebARRocksFace/neuralNets/NN_FULLMAKEUP_2.json'
 
@@ -60,6 +59,7 @@ const MakeupSport = (props) => {
     }
   })
 
+  // useEffect to initialize 
   useEffect(() => {
     setTimeout(() => {
       setInitialize(true)
@@ -95,28 +95,36 @@ const MakeupSport = (props) => {
       <div className="imgDiv">
   
           <div onClick={() => {
-            setInitialize(false)
-            history.push('/brazil')
+            if (window.location.pathname !== '/brazil') { 
+              setInitialize(false)
+              history.push('/brazil')
+            }
           }}>
             <img className="brazil" src={brazilFlag} />
           </div>
 
           <div onClick={() => {
+            if (window.location.pathname !== '/france') {
             setInitialize(false)
             history.push('/france')
+            }
           }}>
             <img className="france" src={franceFlag} />
           </div>
 
           <div onClick={() => {
+            if (window.location.pathname !== '/belgium') {
             setInitialize(false)
             history.push('/belgium')
+            }
           }}>
             <img className="belgium" src={belgiumFlag} />
           </div>
           <div onClick={() => {
+            if (window.location.pathname !== '/portugal') {
             setInitialize(false)
             history.push('/portugal')
+            }
           }}>
             <img className="portugal" src={portugalFlag} />
       </div>
