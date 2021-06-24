@@ -5,13 +5,18 @@ import MakeUP from '../components/makeUp'
 
 
 // Countries
-import {BELGIUM, BRAZIL, FRANCE, PORTUGAL, DEFAULT} from '../utils/countries'
+import {BELGIUM, BRAZIL, FRANCE, PORTUGAL} from '../utils/countries'
 
 
 export default function Home(){
   return (
 <Router>
       <Switch>
+      <Route path="/">
+          <div>
+          <MakeUP/>
+          </div>
+        </Route>
         <Route path="/brazil">
           <div>
           <MakeUP countries={[BRAZIL]}/>
@@ -30,11 +35,6 @@ export default function Home(){
         <Route path="/portugal">
           <div>
           <MakeUP countries={[PORTUGAL]}/>
-          </div>
-        </Route>
-        <Route path="/">
-          <div>
-          <MakeUP countries={[DEFAULT]}/>
           </div>
         </Route>
       </Switch>
